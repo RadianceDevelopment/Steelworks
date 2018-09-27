@@ -1,7 +1,7 @@
 author = vizthex
 
 version = 0.1
--A
+
 displayName = Steelworks
 
 homepage = https://github.com/RadianceDevelopment/Steelworks
