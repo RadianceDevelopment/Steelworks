@@ -4,12 +4,12 @@ using Terraria.ModLoader;
 
 namespace Steelworks.Items
 {
-	public class SteelBar : ModItem
+	public class SteelBinding : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Steel Bar");
-			Tooltip.SetDefault("A bar of Steel. Fairly good quality.");
+			DisplayName.SetDefault("Steel Binding");
+			Tooltip.SetDefault("A binding made of Steel.\nUsed to bind together Steel to make the final product stronger.");
 		}
 		public override void SetDefaults()
 		{
@@ -22,10 +22,10 @@ namespace Steelworks.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.GetItem("Charcoal"), 1);
-			recipe.AddIngredient(ItemID.IronBar, 2);
+			recipe.AddIngredient(mod.GetItem("SteelBar"), 2);
+		    recipe.AddIngredient(ItemID.Chain, 4);
 			recipe.anyIronBar = true;
-			recipe.AddTile(TileID.Furnaces);
+			recipe.AddTile(TileID.Anvils);
 			//recipe.AddTile(TileID.BlastFurnace);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

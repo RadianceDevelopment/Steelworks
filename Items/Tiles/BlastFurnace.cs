@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace Steelworks.Items
+namespace Steelworks.Items.Tiles
 {
 	public class BlastFurnace : ModItem
 	{
@@ -13,10 +13,6 @@ namespace Steelworks.Items
 		}
 		public override void SetDefaults()
 		{
-			item.damage = 15;
-			item.crit = 5;
-			item.knockBack = 6;
-			item.melee = true;
 			item.rare = 1;
 			item.width = 40;
 			item.height = 40;
